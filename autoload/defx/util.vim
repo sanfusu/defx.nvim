@@ -96,7 +96,7 @@ function! s:remove_quote_pairs(s) abort
 endfunction
 function! s:parse_options(cmdline) abort
   let args = []
-  let options = {}
+  let options = {} "defx#custom#_get().option._
 
   " Eval
   let cmdline = (a:cmdline =~# '\\\@<!`.*\\\@<!`') ?
